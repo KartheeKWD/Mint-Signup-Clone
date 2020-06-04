@@ -17,16 +17,33 @@ nav{
                          "forgot signin" ;
     justify-content: end;
     padding: 10px 20px;
+    align-items: center;
 }
 
+.already,
+.forgot {
+    font-size: 12px;
+}
 .already{
     grid-area: already;
+    color: #505050;
 }
 
 .forgot{
     grid-area: forgot;
+    text-decoration: none;
+    color: #0077c5;
 }
 .signin{
     grid-area: signin;
-    margin-left: 5px;
+    margin: 0 15px;
+    color: #fff;
+    background-color: #0077c5;
+    padding: 10px 25px;
+    border: 1px solid #666;
+    border-radius: 5px;
+}
+
+.signin i{
+    margin-right:5px;
 }
