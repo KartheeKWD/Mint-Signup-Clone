@@ -13,6 +13,10 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+li{
+    list-style: none;
+}
+
 /* Navigation Bar Stylings */
 
 nav{
@@ -62,21 +66,47 @@ main{
 
 /* Branding */
 
-.branding {
-    display: flex;
-    flex-wrap: wrap;
-    width: 25vw;
-    
+.branding ul{
+    display: grid;
+    grid-template-areas: "intuit intuit intuit"
+                        "mint quickbooks turbotax";
+    justify-items: center;
 }
 
-span:not(:first-child) {
-    flex: 1;
-}
-
-span:nth-child(1) {
-    width: 100%;
+.branding ul li{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
 }
 
 .intuit{
-    width: 15vw;
+    background-image: url("img/intuit_logo.png");
+    grid-area: intuit;
+    width: 150px;
+    height: 50px;
+    
+}
+
+.mint,
+.quickbooks,
+.turbotax{
+    width: 100px;
+    height: 100px;
+    margin: 0 5px 0 5px;
+}
+
+.mint{
+    background-image: url("img/mint_loo.png");
+    grid-area: mint;
+    width: 70px;
+}
+
+.quickbooks{
+    background-image: url("img/quickbooks_logo.png");
+    grid-area: quickbooks;
+}
+
+.turbotax{
+    background-image: url("img/turbotax_logo.png");
+    grid-area: turbotax;
 }
