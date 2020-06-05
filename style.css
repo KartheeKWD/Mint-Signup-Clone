@@ -75,7 +75,6 @@ main{
     display: grid;
     grid-template-areas: "intuit intuit intuit"
                         "mint quickbooks turbotax";
-    justify-items: center;
 }
 
 .branding ul li{
@@ -87,16 +86,15 @@ main{
 .intuit{
     background-image: url("img/intuit_logo.png");
     grid-area: intuit;
-    width: 150px;
-    height: 50px;
-    
+    width: 100%;
+    height: 40px;
 }
 
 .mint,
 .quickbooks,
-.turbotax{
-    width: 100px;
-    height: 100px;
+.turbotax {
+    width: 120px;
+    height: 50px;
     margin: 0 5px 0 5px;
 }
 
@@ -122,12 +120,12 @@ main{
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 30vw;
+    width: 400px;
     padding: 20px;
     border: 1px solid #c7c7c7;
+    border-bottom: none;
     border-radius: 3px;
 }
 
@@ -137,8 +135,9 @@ main{
 
 .signup h3{
     font-weight: normal;
-    font-size: 24px;
+    font-size: 1.2em;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .signup p{
@@ -180,17 +179,19 @@ main{
     margin: 25px 0;
 }
 
-.terms{
+.signup .terms{
     font-style: italic;
-    font-size: 4px;
+    font-size: 12px;
     text-align: center;
+    line-height: 1.4rem;
 }
 .captcha{
     border: 1px solid #c1c5c8;
+    border-top: none;
     background-color: #ECEEF1;
     font-size: 10px;
     padding: 20px;
-    width: 30vw;
+    width: 400px;
     text-align: center;
 }
 
@@ -202,15 +203,31 @@ footer{
     justify-content: center;
     margin: 15px 0;
     font-size: 12px;
+    text-align: center;
 }
 
 .footer-links{
     display: flex;
-    justify-content: space-around;
-    width: 15vw;
-    
+    justify-content: space-evenly;
+    width: 400px;
+}
+
+.footer-links li a {
+    color: #505050;
 }
 
 footer p{
     margin: 3px 0 ;
+}
+
+/* Privacy Settings Button */
+.privacy-settings {
+    position: fixed;
+    bottom: 0;
+    right: 5vw;
+    background-color: #777;
+    color: #fff;
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 5px;
 }
