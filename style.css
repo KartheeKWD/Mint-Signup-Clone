@@ -8,226 +8,232 @@
   padding: 0;
 }
 
-body{
-    background-color:#ECEEF1;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  background-color: #eceef1;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
-a{
-    text-decoration: none;
-    color: #0077c5;
+a {
+  text-decoration: none;
+  color: #0077c5;
 }
 
 /* Navigation Bar Stylings */
 
-nav{
-    display: grid; 
-    grid-template-areas: "already signin"
-                         "forgot signin" ;
-    justify-content: end;
-    padding: 10px 20px;
-    align-items: center;
+nav {
+  display: grid;
+  grid-template-areas:
+    "already signin"
+    "forgot signin";
+  justify-content: end;
+  padding: 10px 20px;
+  align-items: center;
 }
 
 .already,
 .forgot {
-    font-size: 12px;
-}
-.already{
-    grid-area: already;
-    color: #505050;
+  font-size: 12px;
 }
 
-.forgot{
-    grid-area: forgot;
-    text-decoration: none;
-    color: #0077c5;
-}
-.signin{
-    grid-area: signin;
-    margin: 0 15px;
-    color: #fff;
-    background-color: #0077c5;
-    padding: 10px 25px;
-    border: 1px solid #666;
-    border-radius: 5px;
+.already {
+  grid-area: already;
+  color: #505050;
 }
 
-.signin i{
-    margin-right:5px;
+.forgot {
+  grid-area: forgot;
+  text-decoration: none;
+  color: #0077c5;
+}
+
+.signin {
+  grid-area: signin;
+  margin: 0 15px;
+  color: #fff;
+  background-color: #0077c5;
+  padding: 10px 25px;
+  border: 1px solid #666;
+  border-radius: 5px;
+}
+
+.signin i {
+  margin-right: 5px;
 }
 
 /* Main Section */
 
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Branding */
 
-.branding ul{
-    display: grid;
-    grid-template-areas: "intuit intuit intuit"
-                        "mint quickbooks turbotax";
+.branding ul {
+  display: grid;
+  grid-template-areas:
+    "intuit intuit intuit"
+    "mint quickbooks turbotax";
 }
 
-.branding ul li{
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
+.branding ul li {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.intuit{
-    background-image: url("img/intuit_logo.png");
-    grid-area: intuit;
-    width: 100%;
-    height: 40px;
+.intuit {
+  background-image: url("img/intuit_logo.png");
+  grid-area: intuit;
+  width: 100%;
+  height: 40px;
 }
 
 .mint,
 .quickbooks,
 .turbotax {
-    width: 120px;
-    height: 50px;
-    margin: 0 5px 0 5px;
+  width: 120px;
+  height: 50px;
+  margin: 0 5px 0 5px;
 }
 
-.mint{
-    background-image: url("img/mint_loo.png");
-    grid-area: mint;
-    width: 70px;
+.mint {
+  background-image: url("img/mint_loo.png");
+  grid-area: mint;
+  width: 70px;
 }
 
-.quickbooks{
-    background-image: url("img/quickbooks_logo.png");
-    grid-area: quickbooks;
+.quickbooks {
+  background-image: url("img/quickbooks_logo.png");
+  grid-area: quickbooks;
 }
 
-.turbotax{
-    background-image: url("img/turbotax_logo.png");
-    grid-area: turbotax;
+.turbotax {
+  background-image: url("img/turbotax_logo.png");
+  grid-area: turbotax;
 }
 
 /* Signup Section */
 
-.signup{
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-    padding: 20px;
-    border: 1px solid #c7c7c7;
-    border-bottom: none;
-    border-radius: 3px;
+.signup {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #c7c7c7;
+  border-bottom: none;
+  border-radius: 3px;
 }
 
-.signup h3,p{
-    color: #4c4c4c;
+.signup h3,
+p {
+  color: #4c4c4c;
 }
 
-.signup h3{
-    font-weight: normal;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    text-align: center;
+.signup h3 {
+  font-weight: normal;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-.signup p{
-    font-size: 14px;
+.signup p {
+  font-size: 14px;
 }
 
-.signup .learn-more{
-    font-size: 12px;
+.signup .learn-more {
+  font-size: 12px;
 }
 
 /* Signup Form */
-.signup-form{
-    margin: 20px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+.signup-form {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.signup-form label{
-    color: #404040;
-    margin: 30px 0 10px 0;
+.signup-form label {
+  color: #404040;
+  margin: 30px 0 10px 0;
 }
 
-.signup-form input{
-    width: 320px;
-    height: 30px;
-    border:1px solid #c1c5c8;
-    border-radius: 3px;
+.signup-form input {
+  width: 320px;
+  height: 30px;
+  border: 1px solid #c1c5c8;
+  border-radius: 3px;
 }
 
-.signup-form p{
-    font-size: 10px;
-    color: #444444;
-    margin-top: 5px;
+.signup-form p {
+  font-size: 10px;
+  color: #444;
+  margin-top: 5px;
 }
 
-.create-btn{
-    width: 100%;
-    margin: 25px 0;
+.create-btn {
+  width: 100%;
+  margin: 25px 0;
 }
 
-.signup .terms{
-    font-style: italic;
-    font-size: 12px;
-    text-align: center;
-    line-height: 1.4rem;
+.signup .terms {
+  font-style: italic;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.4rem;
 }
-.captcha{
-    border: 1px solid #c1c5c8;
-    border-top: none;
-    background-color: #ECEEF1;
-    font-size: 10px;
-    padding: 20px;
-    width: 400px;
-    text-align: center;
+
+.captcha {
+  border: 1px solid #c1c5c8;
+  border-top: none;
+  background-color: #eceef1;
+  font-size: 10px;
+  padding: 20px;
+  width: 400px;
+  text-align: center;
 }
 
 /* footer-section */
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 15px 0;
-    font-size: 12px;
-    text-align: center;
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+  font-size: 12px;
+  text-align: center;
 }
 
-.footer-links{
-    display: flex;
-    justify-content: space-evenly;
-    width: 400px;
+.footer-text {
+  margin: 3px 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 400px;
 }
 
 .footer-links li a {
-    color: #505050;
-}
-
-footer p{
-    margin: 3px 0 ;
+  color: #505050;
 }
 
 /* Privacy Settings Button */
 .privacy-settings {
-    position: fixed;
-    bottom: 0;
-    right: 5vw;
-    background-color: #777;
-    color: #fff;
-    padding: 15px;
-    border: 1px solid;
-    border-radius: 5px;
+  position: fixed;
+  bottom: 0;
+  right: 5vw;
+  background-color: #777;
+  color: #fff;
+  padding: 15px;
+  border: 1px solid;
+  border-radius: 5px;
 }
